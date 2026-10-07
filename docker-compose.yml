@@ -1,0 +1,8 @@
+services:
+  build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/work
+      - ./.ccache:/root/.cache/ccache

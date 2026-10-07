@@ -1,0 +1,14 @@
+#!/bin/sh
+# Launch the game; restart it if it ever exits.
+
+case "$1" in
+    start)
+        (while true; do /usr/bin/snake; sleep 1; done) &
+        ;;
+    stop|status)
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|status}"
+        exit 1
+esac
+exit 0

@@ -1,0 +1,6 @@
+.DS_Store
+/images/
+/output/
+/.buildroot_dl/
+/.buildroot-ccache/
+/.ccache/

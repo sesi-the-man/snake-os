@@ -1,0 +1,17 @@
+# Cut-down GPU firmware: no camera or video needed
+start_file=start_cd.elf
+fixup_file=fixup_cd.dat
+
+# Kernel location
+kernel=zImage
+
+# Minimum GPU memory (required by the cut-down firmware)
+gpu_mem=16
+
+# Enable SPI (LCD)
+dtparam=spi=on
+
+# Set the bootloader delay to 0 seconds. The default is 1s if not specified
+boot_delay=0
+disable_splash=1
+force_turbo=1

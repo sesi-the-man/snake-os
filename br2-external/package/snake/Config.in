@@ -1,0 +1,5 @@
+config BR2_PACKAGE_SNAKE
+	bool "snake"
+	help
+	  Tiny snake game for a small ST7789 SPI LCD (240x240 or 320x240)
+	  with joystick and buttons. Plain C, no dependencies beyond libc.
