@@ -10,6 +10,15 @@ game; there is nothing else on it.
   networking, no camera stack.
 - The image is about 20 MB.
 
+<p align="center">
+  <img src="docs/screenshots/menu.png" width="240" alt="Main menu">
+  <img src="docs/screenshots/gameplay-240x240.png" width="240" alt="Gameplay on the 240x240 screen">
+</p>
+<p align="center">
+  <img src="docs/screenshots/gameplay-320x240.png" width="320" alt="Gameplay on the 320x240 screen">
+  <img src="docs/screenshots/game-over.png" width="320" alt="Game over screen">
+</p>
+
 ## Supported hardware
 
 | Part | Supported |
