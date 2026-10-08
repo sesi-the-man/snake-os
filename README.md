@@ -20,11 +20,8 @@ game; there is nothing else on it.
 
 ## Installing
 
-1. Download `snake_os.<version>.pi0.img` and `snake_os.<version>.sha256.txt`
-   from the [Releases](../../releases) page.
-2. Check the download (see [Verifying a release](#verifying-a-release)).
-3. Flash the `.img` to a microSD card with [balenaEtcher](https://etcher.balena.io)
-   or Raspberry Pi Imager (choose "Use custom").
+1. Download `snake_os.<version>.pi0.img` from the [Releases](../../releases) page.
+2. Flash the `.img` to a microSD card with Raspberry Pi Imager or a similar tool.
 4. Insert the card and power on. The game appears within a few seconds.
 
 ## Playing
@@ -43,23 +40,6 @@ game; there is nothing else on it.
 **Screen type:** the image starts in 240x240 mode. If you have a 320x240
 screen and the display looks scrambled, press KEY3 once. The choice is saved to
 `game.cfg` on the SD card, so it sticks as long as the card stays inserted.
-
-## Verifying a release
-
-```bash
-shasum -a 256 -c snake_os.<version>.sha256.txt     # macOS
-sha256sum -c snake_os.<version>.sha256.txt          # Linux
-```
-
-If the release includes a `.sig` file, also check the signature:
-
-```bash
-gpg --verify snake_os.<version>.sha256.txt.sig snake_os.<version>.sha256.txt
-```
-
-Builds are reproducible: anyone can rebuild a tagged version and should get a
-byte-for-byte identical image with the same SHA-256 (see
-[docs/BUILDING.md](docs/BUILDING.md)).
 
 ## Building it yourself
 
